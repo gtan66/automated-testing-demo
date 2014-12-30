@@ -3,7 +3,8 @@ exports.config = {
     specs: ['tests/spec.js'],
     onPrepare: function() {
       require('jasmine-reporters');
-      jasmine.getEnv().addReporter(new jasmineReporters.TapReporter());
-      
-    }
+      jasmine.getEnv().addReporter(
+        new jasmine.JUnitXmlReporter('xmloutput', true, true)
+      );
+    } 
 }
