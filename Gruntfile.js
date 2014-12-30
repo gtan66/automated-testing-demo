@@ -1,5 +1,13 @@
 module.exports = function(grunt) {
   grunt.initConfig({
+    protractor_webdriver: {
+      your_target: {
+        options: {
+          path: 'node_modules/protractor/bin/',
+          command: 'webdriver-manager start',
+        },
+      },
+    },
     protractor: {
       options: {
         configFile:  "node_modules/protractor/example/conf.js",
@@ -15,6 +23,9 @@ module.exports = function(grunt) {
       }
     }
   });
+
+  grunt.loadNpmTasks('grunt-protractor-webdriver');
   grunt.loadNpmTasks('grunt-protractor-runner');
-  grunt.registerTask('default', ['protractor']);
+  grunt.registerTask('default', ['protractor_webdriver','protractor']);
+
 }
