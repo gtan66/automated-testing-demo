@@ -1,9 +1,6 @@
 exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: ['tests/spec.js'],
-    multiCapabilities: [{
-     'browserName': 'safari'
-    }],
     onPrepare: function() {
       require('jasmine-reporters');
       jasmine.getEnv().addReporter(
