@@ -15,6 +15,7 @@
     "protractor": "^1.5.0"
   },
   "devDependencies": {
+    "grunt-cli": "^0.1.13",
     "protractor-screenshot-reporter": "0.0.5"
   },
   "scripts": {
