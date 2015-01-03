@@ -10,7 +10,8 @@
     "grunt": "^0.4.5",
     "grunt-protractor-runner": "^1.1.4",
     "grunt-protractor-webdriver": "^0.2.0",
-    "protractor": "^1.5.0"
+    "protractor": "^1.5.0",
+    "jasmine-reporters": "^1.0.1"
   },
   "devDependencies": {
     "grunt-cli": "^0.1.13"
