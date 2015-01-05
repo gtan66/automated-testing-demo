@@ -1,5 +1,5 @@
 exports.config = {
-  seleniumAddress: 'http://localhost:4444/wd/hub',
+  seleniumAddress: 'http://192.168.59.103:4444/wd/hub',
   specs: ['tests/spec.js'],
   onPrepare: function() {
     require('jasmine-reporters');
